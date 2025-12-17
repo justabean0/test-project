@@ -1,7 +1,6 @@
  body{
       margin: 0;
-      font-family: Arial;
-      background-color: rgb(245, 245, 247);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     .top{
       display: flex;
@@ -19,34 +18,6 @@
       padding: 0px 22px;
       justify-content: space-between;
       white-space: nowrap;
-    } 
-    .emi{
-      height: 45px;
-      width: auto;
-      justify-content: center;
-      text-align: center;
-      margin: 12px 0px 0px 0px;
-      font-size: 14.3px;
-      font-weight: 500;
-    }
-    .product{
-      min-height: 500px;
-      width: 100%;
-      padding-bottom: 40px;
-    }
-    .logo{
-      margin-top: 40px;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      margin-bottom: 0px;
-      position: relative;
-      z-index: 5;
-    }
-    .logo img{
-      height: min(3vh, 200px);
-      max-width: 100%;
-      object-fit: contain;
     }
     .text{
       font-size: 12px;
@@ -55,22 +26,71 @@
       align-items: center;
       margin: 15px 0px 5px 0px;
       white-space: nowrap;
-      font-weight: 100;
+      font-weight: 400;
       cursor: pointer;
     }
     a{
       text-decoration: none;
-      text-decoration-color:rgb(34, 118, 235);
+      color:rgb(34, 118, 235);
     }
     a:hover .un{
       text-decoration: underline;
+    }
+    .vector{
+      cursor: pointer;
+    } 
+    .emi{
+      height: 45px;
+      width: auto;
+      justify-content: center;
+      text-align: center;
+      padding: 12px 0px 0px 0px;
+      font-size: 14.3px;
+      font-weight: 400;
+      background-color: rgb(245, 245, 247);
+    }
+    .product{
+      width: auto;
+      margin-bottom: 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgb(245, 245, 247);
+      cursor: pointer;
+      position: relative;
+    }
+    .product img{
+      height: 66.5vh;
+      width: auto;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .logo{
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 0px;
+      position: absolute;
+      z-index: 5;
+      position: absolute;
+      top: 9%;
+      left: 49.8%;
+      transform: translate(-50%, -50%);
+    }
+    .logo img{
+      height: 100%;
+      object-fit: cover;
     }
     .tagline{
       display: flex;
       justify-content: center;
       margin-top: 6px;
-      font-size: 26px;
-      position: relative;
+      font-size: 26.4px;
+      position: absolute;
+      top: 14%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       z-index: 5;
     }
     .comment{
@@ -80,24 +100,35 @@
       font-size: 18px;
       color:rgb(112, 112, 117);
       z-index: 5;
-      position: relative;
+      position: absolute;
+      top: 18%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .buttons{
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 20px;
-      position: relative;
+      position: absolute;
       z-index: 5;
+      top: 23.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .butt1{
       font-size: 17px;
       border-radius: 16px;
       border: none;
-      background-color:rgb(34, 118, 235);
+      background-color:rgb(34, 112, 225);
       color: white;
-      padding: 7px 15px ;
-      margin-right: 12px;
+      padding: 8px 15px ;
+      margin-right: 18px;
+      cursor: pointer;
+      animation: 0.15s;
+    }
+    .butt1:hover{
+      background-color: rgb(34, 118, 235);
     }
     .butt2{
       font-size: 17px;
@@ -106,7 +137,7 @@
       border-color:rgb(34, 118, 235);
       border-width: 1px;
       color: rgb(34, 118, 235);
-      padding: 3px 14px 5px 14px;
+      padding: 6px 15px 6px 15px;
       margin-right: 12px;
       transition: 0.12s;
     }
@@ -122,19 +153,4 @@
     .butt2:hover .po{
       color: white;
     }
-    .im{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 60vh;
-      min-height: 400px;
-      margin-top: -100px;
-      overflow: hidden;
-      z-index: 1;
-    }
-    .ima{
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      object-position: center;
-    }
+   
